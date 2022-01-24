@@ -34,21 +34,21 @@
         <label for="staff">STAFF</label>
             <br>
             <br>
-            <label for="fname">Id &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
-            <input type="text" id="fname" name="fname"><br><br>
-            <label for="lname">Password &nbsp;</label>
-            <input type="text" id="lname" name="lname"><br><br><br>
+        <form action="loginServlet" method="post">
+            <label for="fid">Id &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
+            <input type="text" id="fid" name="fid"><br><br>
+            <label for="lpass">Password &nbsp;</label>
+            <input type="text" id="lpass" name="lpass"><br><br><br>
             <input type="submit" value="Login">
             <br>
+        </form>
             <br>
             <div class="text-center p-t-12">
-                <a href="#">Create Account
+                <a href="createAcc.jsp">Create Account
                     <i class="fa fa-long-arrow-right m-l-5" aria-hidden="true"></i>
                 </a>
             </div>
     </div>
-    <a href="createaccUsr.jsp">Create acc user</a>
-    <a href="createaccStff.jsp">Create acc staff</a>
     <a href="delupduser.jsp">del up user</a>
     <a href="delupdStff.jsp">del up staff</a>
     <a href="addbook.jsp">add book</a>

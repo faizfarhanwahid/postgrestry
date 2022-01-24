@@ -5,7 +5,7 @@ import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.SQLException;
 
-public abstract class dbconn {
+public abstract class Postgres {
     // add static variable
     private static Connection conn = null;
 
@@ -18,7 +18,7 @@ public abstract class dbconn {
             if(System.getenv("DATABASE_URL") != null)
                 dbURI = new URI(System.getenv("DATABASE_URL")); // get value from system environment
             else
-                dbURI = new URI("postgres://postgres:system@localhost:5432/ddn4nslo8pnje3");
+                dbURI = new URI("postgres://postgres:root@localhost:5432/lucytech");
 
             String username, password, dbURL;
 
