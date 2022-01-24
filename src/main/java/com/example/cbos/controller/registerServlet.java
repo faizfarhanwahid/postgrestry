@@ -51,9 +51,10 @@ public class registerServlet extends HttpServlet {
 
             if(id.length()>4){
              sql = "INSERT INTO users (user_id,user_name,user_password,user_address,user_email,user_phonenumber) VALUES (?,?,?,?,?,?)";
-        }
 
+            }
 
+            response.sendRedirect("index.jsp");
             int affectedRow = 0; // untuk check row
 
             try {

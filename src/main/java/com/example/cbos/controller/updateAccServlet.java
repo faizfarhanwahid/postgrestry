@@ -34,7 +34,8 @@ public class updateAccServlet extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
         //retrieve
 
-        String name = request.getParameter("lname");
+
+
         String password = request.getParameter("lpass");
         String address = request.getParameter("ldress");
         String email = request.getParameter("lmail");
@@ -46,7 +47,9 @@ public class updateAccServlet extends HttpServlet {
         //print
         out.println("<!DOCTYPE html><html><body>");
 
-        out.println("Name: "+ name+ "<br>");
+        out.println("<!DOCTYPE html><html><body>");
+
+
         out.println("Password: "+ password + "<br>");
         out.println("Address: "+ address + "<br>");
         out.println("Email: "+ email + "<br>");
@@ -57,15 +60,15 @@ public class updateAccServlet extends HttpServlet {
         Connection conn = Postgres.getConnection();
 
         HttpSession session = request.getSession();
-        session.getAttribute("uid");
+        session.getAttribute("fid");
 
-        int id = (Integer)session.getAttribute("uid");
+        int id = (Integer)session.getAttribute("fid");
 
 
-        String sql = "UPDATE staff set staff_password=?,staff_address=?,staff_email=?,staff_phonenumber=? WHERE id=?";
+        String sql = "UPDATE staff set staff_password=?,staff_address=?,staff_email=?,staff_phonenumber=? WHERE staff_id=?";
 
         if(Integer.toString(id).length() >4){
-            sql = "UPDATE users set users_password=?,users_address=?,users_email=?,users_phonenumber=? WHERE id=?";
+            sql = "UPDATE users set user_password=?,user_address=?,user_email=?,user_phonenumber=? WHERE user_id=?";
         }
 
 
@@ -92,6 +95,7 @@ public class updateAccServlet extends HttpServlet {
         if(affectedRow == 0) {
             // tak berjaya insert sebab row yang berubah = 0
         } else if(affectedRow ==  1) {
+            response.sendRedirect("booklist.jsp");
             // berjaya masuk sebab row yang affected = 1, maknanya satu row dalam table ditambah
         }
 

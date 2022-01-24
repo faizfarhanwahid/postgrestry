@@ -48,9 +48,14 @@ public class loginServlet extends HttpServlet {
                 ResultSet sql = st.executeQuery("SELECT * FROM users WHERE user_id = '" + id + "' AND user_password = '" + password + "'");
                 if (sql.next()) {
                     HttpSession session = request.getSession();
-                    session.setAttribute("uid", sql.getString("user_id") );
+                    session.setAttribute("fid", sql.getInt("user_id") );
+                    session.setAttribute("lname", sql.getString("user_name") );
+                    session.setAttribute("lpass", sql.getString("user_password") );
+                    session.setAttribute("ldress", sql.getString("user_address") );
+                    session.setAttribute("lmail", sql.getString("user_email") );
+                    session.setAttribute("lnum", sql.getString("user_phonenumber") );
                     session.setMaxInactiveInterval(60*20); // 20 min timeout after inactivity
-                    response.sendRedirect("cart.jsp");
+                    response.sendRedirect("booklist.jsp");
                 } else {
                     out.println("Wrong username/password");
                     //response.sendRedirect("loginBuyer.jsp"); //patut ke buat new page? utk login kalau dia ada error, sbb ni nnti dia direct je hahaha
@@ -59,7 +64,12 @@ public class loginServlet extends HttpServlet {
                 ResultSet sql = st.executeQuery("SELECT * FROM staff WHERE staff_id = '" + id + "' AND staff_password = '" + password + "'");
                 if (sql.next()) {
                     HttpSession session = request.getSession();
-                    session.setAttribute("uid", sql.getString("staff_id") );
+                    session.setAttribute("fid", sql.getInt("staff_id") );
+                    session.setAttribute("lname", sql.getString("staff_name") );
+                    session.setAttribute("lpass", sql.getString("staff_password") );
+                    session.setAttribute("ldress", sql.getString("staff_address") );
+                    session.setAttribute("lmail", sql.getString("staff_email") );
+                    session.setAttribute("lnum", sql.getString("staff_phonenumber") );
                     session.setMaxInactiveInterval(60*20); // 20 min timeout after inactivity
                     response.sendRedirect("addbook.jsp");
                 } else {

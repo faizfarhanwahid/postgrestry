@@ -60,8 +60,9 @@
     }
 
 </style>
+<head><%@include file="navbar.html"%></head>
+<body style="background-color:#D7EAE8;">
 
-<body style="background-color:#D7EAE8;padding-top: 50px;">
 <center>
     <div class="container">
         <h1>Book List</h1>

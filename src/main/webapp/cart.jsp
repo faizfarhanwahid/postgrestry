@@ -41,8 +41,9 @@
     }
 
 </style>
+<head><%@include file="navbar.html"%></head>
 
-<body style="background-color:#D7EAE8;padding-top: 50px;">
+<body style="background-color:#D7EAE8">
 <center>
     <div class="container">
         <h1>Cart</h1>

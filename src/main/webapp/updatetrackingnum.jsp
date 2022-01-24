@@ -38,8 +38,8 @@
 
 
 </style>
-
-<body style="background-color:#D7EAE8;padding-top: 50px;">
+<%@include file="navbarStaff.html"%>
+<body style="background-color:#D7EAE8;">
 <center>
   <div class="container">
     <h1>Tracking Number</h1>

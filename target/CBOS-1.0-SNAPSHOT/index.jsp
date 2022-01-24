@@ -25,20 +25,16 @@
     <div class="container">
         <h1>LOGIN ACCOUNT</h1>
 
-        <img src="https://scontent.xx.fbcdn.net/v/t39.30808-6/271818214_359858489195274_8560785430061830537_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=buLq4AKuapoAX_uKuwN&_nc_ht=scontent.xx&oh=00_AT-fm0bfbSTVeRebAc3gyuwOBorehmDUHS36KLLdicb4AA&oe=61EB0A15"  style="width:154px;height:152px;">
+        <img src="https://scontent.xx.fbcdn.net/v/t39.30808-6/271818214_359858489195274_8560785430061830537_n.jpg?_nc_cat=102&ccb=1-5&_nc_sid=730e14&_nc_ohc=GLJ9l96ovSQAX9NqYi_&_nc_ht=scontent.xx&oh=00_AT-tCoSA6EOdroUlDZpi58IlE3ckzpAtM_XNhA8ym6LFEA&oe=61F4ED55"  style="width:154px;height:152px;">
         <br>
         <br>
-        <input type="radio" id="user" name="fav_language" value="user">
-        <label for="user">USER</label>
-        <input type="radio" id="staff" name="fav_language" value="staff">
-        <label for="staff">STAFF</label>
             <br>
             <br>
         <form action="loginServlet" method="post">
             <label for="fid">Id &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;</label>
             <input type="text" id="fid" name="fid"><br><br>
             <label for="lpass">Password &nbsp;</label>
-            <input type="text" id="lpass" name="lpass"><br><br><br>
+            <input type="password" id="lpass" name="lpass"><br><br><br>
             <input type="submit" value="Login">
             <br>
         </form>
@@ -49,9 +45,8 @@
                 </a>
             </div>
     </div>
-    <a href="createAcc.jsp">Create acc user</a>
-    <a href="delupduser.jsp">del up user</a>
-    <a href="delupdStff.jsp">del up staff</a>
+    <a href="deleteAcc.jsp">delete acc</a>
+    <a href="updateAcc.jsp">update acc</a>
     <a href="addbook.jsp">add book</a>
     <a href="delupdbook.jsp">del up book</a>
     <a href="viewbooktocart.jsp">view book add to cart</a>

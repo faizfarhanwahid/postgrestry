@@ -2,7 +2,7 @@
   Created by IntelliJ IDEA.
   User: User
   Date: 17/1/2022
-  Time: 11:15 PM
+  Time: 11:13 PM
   To change this template use File | Settings | File Templates.
 --%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
@@ -15,7 +15,6 @@
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
 <style>
     .container {
         position: relative;
@@ -27,31 +26,33 @@
         border-style:solid;
     }
 </style>
-
-<body style="background-color:#D7EAE8;padding-top: 50px;">
+<head><%@include file="navbar.html"%></head>
+<body style="background-color:#D7EAE8;">
 <center>
     <div class="container">
         <h1>Account Profile</h1>
 
-        <img src="https://cdn-icons.flaticon.com/png/512/3281/premium/3281869.png?token=exp=1642432528~hmac=983ad37ba2df8cfa51a9eb9446ebba39"  style="width:154px;height:152px;">
-        <h3>Staff</h3>
+        <img src="https://cdn-icons-png.flaticon.com/512/194/194931.png"  style="width:154px;height:152px;">
+        <h3>User</h3>
         <br>
-        <form>
+
+        <form action="deleteAccServlet" method="post">
             <label for="fname">ID :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="text" id="fname" name="fname"><br><br>
+            <input type="text" id="fname" name="fname" value="${sessionScope.fid}" disabled><br><br>
             <label for="lname">Name :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="text" id="lname" name="lname"><br><br>
+            <input type="text" id="lname" name="lname" value="${sessionScope.lname}" disabled><br><br>
             <label for="lpass">Password :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="password" id="lpass" name="lpass"><br><br>
+            <input type="password" id="lpass" name="lpass" value="${sessionScope.lpass}"><br><br>
             <label for="ldress">Address :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="text" id="ldress" name="ldress"><br><br>
+            <input type="text" id="ldress" name="ldress" value="${sessionScope.ldress}"><br><br>
             <label for="lmail">Email :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-            <input type="email" id="lmail" name="lmail"><br><br>
+            <input type="email" id="lmail" name="lmail" value="${sessionScope.lmail}"><br><br>
             <label for="lnum">Phone Number :</label>
-            <input type="text" id="lnum" name="lnum"><br><br><br>
+            <input type="text" id="lnum" name="lnum" value="${sessionScope.lnum}"><br><br><br>
             <input type="submit" value="Delete">
-            <input type="submit" value="Update">
         </form>
+
+
     </div>
 </center>
 </body>

@@ -36,14 +36,14 @@ public class deleteAccServlet extends HttpServlet {
 
 
         HttpSession session = request.getSession();
-        session.getAttribute("uid");
+        session.getAttribute("fid");
 
-        int id = (Integer)session.getAttribute("uid");
+        int id = (Integer)session.getAttribute("fid");
 
-        String sql = "DELETE from staff where user_id=?";
+        String sql = "DELETE from staff where staff_id=?";
 
         if(Integer.toString(id).length() >4){
-            sql = "DELETE from staff where staff_id=?";
+            sql = "DELETE from users where user_id=?";
         }
 
 
@@ -65,6 +65,8 @@ public class deleteAccServlet extends HttpServlet {
         if(affectedRow == 0) {
             // tak berjaya insert sebab row yang berubah = 0
         } else if(affectedRow ==  1) {
+            session.invalidate();
+            response.sendRedirect("index.jsp");
             // berjaya masuk sebab row yang affected = 1, maknanya satu row dalam table ditambah
         }
 

@@ -29,8 +29,8 @@
         border:1px ;
     }
 </style>
-
-<body style="background-color:#D7EAE8;padding-top: 50px;">
+<%@include file="navbar.html"%>
+<body style="background-color:#D7EAE8">
 <center>
     <div class="container">
         <h1>Book Info</h1>

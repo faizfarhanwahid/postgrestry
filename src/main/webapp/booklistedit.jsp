@@ -1,3 +1,4 @@
+<%@ page import="com.example.cbos.connection.Postgres" %>
 <%--
   Created by IntelliJ IDEA.
   User: User
@@ -5,6 +6,9 @@
   Time: 12:42 PM
   To change this template use File | Settings | File Templates.
 --%>
+<%@page import="java.sql.Connection" %>
+<%@ page import="java.sql.*" %>
+
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 <html>
@@ -38,8 +42,9 @@
   }
 
 </style>
+<%@include file="navbarStaff.html"%>
+<body style="background-color:#D7EAE8;">
 
-<body style="background-color:#D7EAE8;padding-top: 50px;">
 <center>
   <div class="container">
     <h1>Book List</h1>
@@ -60,10 +65,12 @@
         </thead>
         <tbody>
 
+
+
         <tr rowspan ="4">
-          <td style="text-align: center;"></td>
-          <td style="text-align: center;"></td>
-          <td style="text-align: center;"></td>
+          <td style="text-align: center;">1</td>
+          <td style="text-align: center;">2</td>
+          <td style="text-align: center;">3</td>
           <td style="text-align: center;"><a href="#"><i class="far fa-edit"></i><a></a></a></td>
         </tr>
 
@@ -76,12 +83,5 @@
 </center>
 </body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.23/js/jquery.dataTables.js"></script>
-<script type="text/javascript">
-  $(document).ready( function () {
-    $('#voteList').DataTable();
-  } );
-</script>
 
 </html>

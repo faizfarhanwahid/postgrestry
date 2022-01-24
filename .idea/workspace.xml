@@ -10,13 +10,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4c7ff780-2d61-458e-8fd9-2ce9b6df3fd3" name="Changes" comment="first">
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cbos/connection/dbconn.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/createaccStff.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/webapp/createaccUsr.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/createAcc.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cbos/controller/deleteAccServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cbos/controller/deleteAccServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cbos/controller/loginServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cbos/controller/loginServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cbos/controller/registerServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cbos/controller/registerServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/cbos/controller/updateAccServlet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/example/cbos/controller/updateAccServlet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/addbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/addbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/booklist.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/booklist.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/booklistedit.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/booklistedit.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/cart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/cart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/delupdStff.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updateAcc.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/delupdbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/delupdbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/delupduser.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/deleteAcc.jsp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/createaccStff.jsp" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/createaccUsr.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/paymentstatus.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/paymentstatus.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/updatetrackingnum.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/updatetrackingnum.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/uploadpayment.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/uploadpayment.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/webapp/viewbooktocart.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/webapp/viewbooktocart.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/WEB-INF/classes/com/example/cbos/controller/deleteAccServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/WEB-INF/classes/com/example/cbos/controller/deleteAccServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/WEB-INF/classes/com/example/cbos/controller/loginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/WEB-INF/classes/com/example/cbos/controller/loginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/WEB-INF/classes/com/example/cbos/controller/registerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/WEB-INF/classes/com/example/cbos/controller/registerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/WEB-INF/classes/com/example/cbos/controller/updateAccServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/WEB-INF/classes/com/example/cbos/controller/updateAccServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/addbook.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/addbook.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/delupdStff.jsp" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/delupduser.jsp" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/index.jsp" beforeDir="false" afterPath="$PROJECT_DIR$/target/CBOS-1.0-SNAPSHOT/index.jsp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cbos/controller/deleteAccServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cbos/controller/deleteAccServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cbos/controller/loginServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cbos/controller/loginServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cbos/controller/registerServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cbos/controller/registerServlet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/example/cbos/controller/updateAccServlet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/example/cbos/controller/updateAccServlet.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,6 +49,7 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="HTML File" />
       </list>
     </option>
   </component>
@@ -46,11 +69,12 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../JEETry" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Artifacts" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.38850576" />
   </component>
@@ -153,7 +177,7 @@
       <option name="presentableId" value="Default" />
       <updated>1643014234678</updated>
       <workItem from="1643014236238" duration="520000" />
-      <workItem from="1643014807809" duration="14439000" />
+      <workItem from="1643014807809" duration="38942000" />
     </task>
     <task id="LOCAL-00001" summary="first">
       <created>1643015672754</created>
@@ -162,7 +186,21 @@
       <option name="project" value="LOCAL" />
       <updated>1643015672754</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="first">
+      <created>1643029832519</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1643029832519</updated>
+    </task>
+    <task id="LOCAL-00003" summary="first">
+      <created>1643029985938</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1643029985938</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
