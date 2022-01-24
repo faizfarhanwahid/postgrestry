@@ -9,8 +9,5 @@
         <module name="CBOS" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="CBOS" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
